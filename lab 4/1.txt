@@ -1,0 +1,27 @@
+class Node: 
+    def __init__(self, data): 
+        self.data = data  
+        self.next = None 
+  
+class Silink: 
+    def __init__(self): 
+        self.head = None
+    def printList(self): 
+        temp = self.head 
+        while (temp): 
+            print (temp.data) 
+            temp = temp.next
+  
+slist = Silink() 
+slist.head = Node("heyyyyy") 
+second = Node(2) 
+third = Node("hiiiiiii") 
+slist.head.next = second
+second.next = third
+slist.printList() 
+
+
+output:
+heyyyyy
+2
+hiiiiiii
